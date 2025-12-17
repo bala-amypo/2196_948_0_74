@@ -10,10 +10,10 @@ public class studentEntity{
     @GenerateValue(strategy = GenerationTyoe.IDENTITY)
     private long id;
 
-    @NotBlank(message="Name is not valid");
+    @NotBlank(message="Name is not valid")
     private String name;
 
-    @Email(message = "Email format is not valid");
+    @Email(message = "Email format is not valid")
     private String email;
 
     public void setId(Long id){
@@ -36,9 +36,6 @@ public class studentEntity{
     public String email(){
         return email;
     }
-
-
-
     public studentEntity(){
 
     }
