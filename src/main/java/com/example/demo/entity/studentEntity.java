@@ -3,11 +3,11 @@ package com.example.demo.entity;
 import jakarta.persistence.*;
 import jakarta.validation.constraints.*;
 
-@entity
+@Entity
 public class studentEntity{
 
     @Id 
-    @GenerateValue(strategy = GenerationTyoe.IDENTITY)
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private long id;
 
     @NotBlank(message="Name is not valid")
@@ -26,14 +26,14 @@ public class studentEntity{
     public void setName(String name){
         this.name = name;
     }
-    public String name(){
+    public String getName(){
         return name;
     }
 
     public void setEmail(String email){
         this.email = email;
     }
-    public String email(){
+    public String getEmail(){
         return email;
     }
     public studentEntity(){
