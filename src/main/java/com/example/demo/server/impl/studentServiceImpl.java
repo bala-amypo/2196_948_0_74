@@ -22,5 +22,4 @@ public class studentServiceImpl implements studentService{
         return repo.save(student);
     }
 
-
 }
