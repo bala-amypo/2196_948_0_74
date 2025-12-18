@@ -22,4 +22,5 @@ public class studentController{
     public studentEntity addStudent(@valid @ResquestBody studentEntity student){
         return service.addStudent(student);
     }
+    
 }
