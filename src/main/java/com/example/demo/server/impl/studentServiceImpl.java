@@ -6,6 +6,7 @@ import com.example.demo.entity.*;
 import java.util.*;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.*;
 
 
 @Service
@@ -16,6 +17,9 @@ public class studentServiceImpl implements studentService{
 
     public List<studentEntity> getAll(){
         return repository.findAll();
+    }
+    public studentEntity addStudent(studentEntity student){
+        return repo.save(student);
     }
 
 
